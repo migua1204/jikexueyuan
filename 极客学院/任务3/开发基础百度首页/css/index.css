@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*整体*/
+html,
+body {
+    height: 100%;
+    /*behavior: url(ie-css3.htc);*/
+}
+
+.container {
+    min-width: 810px;
+    min-height: 600px;
+    height: 100%;
+    position: relative;
+}
+
+
+/*头部部分*/
+
+header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 5px 0;
+}
+
+header nav a {
+    font: 13px arial;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    float: left;
+    line-height: 24px;
+    margin-left: 20px;
+    position: relative;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+header nav a:last-child:hover {
+    color: white;
+}
+
+
+/*设置菜单－样式*/
+
+#setmenu {
+    width: 70px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    box-shadow: 1px 1px 5px #d1d1d1\9;
+    -ms-border: 1px solid #d1d1d1;
+    -ms-box-shadow: 1px 1px 5px #d1d1d1\9;
+    position: absolute;
+    left: 340px;
+    top: 25px;
+    text-align: center;
+    display: none;
+    behavior: url(ie-css3.htc);
+
+
+}
+
+#setmenu ul {
+    list-style-type: none;
+    font-size: 12px;
+    color: #333;
+}
+
+#setmenu ul li a {
+    margin: 0;
+    width: 70px;
+    line-height: 26px;
+    color: #333;
+    font-weight: normal;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+#setmenu ul li a:hover {
+    color: white;
+    background-color: #3385ff;
+}
+
+/*向上箭头样式*/
+.arrow_up {
+    position: absolute;
+    left: 28px;
+    top: -5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #d1d1d1;
+}
+
+.arrow_up1 {
+    position: absolute;
+    left: -4px;
+    top: 1px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #fff;
+}
+
+/*更多产品*/
+.more {
+    position: absolute;
+    text-decoration: none;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: -1px;
+    margin-left: 25px;
+    text-align: center;
+    color: white;
+    background: #38f;
+}
+
+
+    
+/*主体部分*/
+
+.content {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.content img {
+    margin-bottom: 10px;
+    width: 270px;
+    height: 129px:
+}
+
+.main {
+    position: absolute;
+    width: 650px;
+    height: 36px;
+    left: 50%;
+    margin-left: -325px;
+    margin-top: 13px;
+    behavior: url(ie-css3.htc);
+    
+}
+/*搜索框部分*/
+.main input {
+    border: 1px solid #b6b6b6;
+    border-right-width: 0;
+    width: 520px;
+    height: 34px;
+    vertical-align: middle;
+    padding: 0 10px;
+    outline: 0;
+    behavior: url(ie-css3.htc);
+}
+
+.main input:hover {
+    border: 1px solid #999;
+    border-right-width: 0;
+    behavior: url(ie-css3.htc);
+
+}
+
+.main input:focus {
+    border: 1px solid #4791ff;
+    border-right-width: 0;
+    behavior: url(ie-css3.htc);
+}
+
+.main input[type="submit"] {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    cursor: pointer;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.main input[type="submit"]:hover {
+    background: #317ef3;
+    box-shadow: 1px 1px 1px #ccc;
+    border-bottom: 1px solid #2868c8;
+}
+/*竖线*/
+.line {
+    border-right: 1px solid #ccc;
+    height: 50%;
+    top: 25%;
+    position: absolute;
+    left: 505px;
+}
+/*照相机*/
+.soutu-btn {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 515px;
+    /*background: url(../img/照相机.png) no-repeat;
+    background-size: 18px 18px;
+*/    
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_679c15cc.png) no-repeat;
+    background-position: 0px 0px;
+    display: inline-block;
+}
+
+.soutu-btn:hover {
+    /*background: url(../img/照相机2.png) no-repeat;*/
+    /*background-size: 18px 18px;*/
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_679c15cc.png) no-repeat;
+    background-position: 0px -20px;
+}
+
+/*语音话筒*/
+.voice-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 4px;
+    left: 472px;
+    behavior: url(backgroundsize.min.htc);
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAXlJREFUKBW9kr1Kw1AUx5OYVWiRGqqLiPgIios4qg+QobhI7QdYH6CKk4IPUCRNQhFRHPIAnRykIIqre7cMsUMHp0Jt/J2ShiYWxx44/M/53/N17z2qkhLbtgtQl+g62kWvKpXKExiLFlsYzWbzCLgOw7A2HA6XVFU9Ez/i41A9tjAIutA0rVAqld4j/tl13cJoNLrHf5zEJjpBbvq+/zE5FIz8jWkuYXOfMEFETppPd5qV84ebX5Iu82azWd00zR+Zg+fmEdWZd/M8b6Hf7w9kvKDX661Eg3cdx9mK7DFQdBtDPlkhYRUI5J86uq4fgA4d6nR6sCzrOAiCN8MwduDvhAdF9tFX/lJrYNRbrdZiuVz2SDqHs/P5/EBQfOHlXOIkXsVQGMnicI2OZrFY/BZuWiSBtfLo6FPgZLxGmUymxrwNDj65ww3YzuVycleDQof4Ml6bONlFZdxpUpXF3MU+peIeuIx+McELeFutVjvg/5Jeneno+W3ELz3Rmg23qA6NAAAAAElFTkSuQmCC) no-repeat center;
+    
+display: inline-block;
+}
+
+.voice-btn:hover {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAMAAAC3taQAAAAAhFBMVEX///8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf8zhf+04UQDAAAAK3RSTlMAAQIDBgwNHR43ODs9PkNEVFZaXGZnlpecqaq31NfZ2t3e3+Dl6On5+/z9BL131wAAAHdJREFUCB0FwYcCgQAUAMBTFGWPaCGb9///5w5s+3e/BdgNy8lq2AH6AsUZ8EuQ/AABAhAgAAECECAgUjGCkH49c9cZZlfTh2ZvcymT8rKxb8xvmXX36day25xjm4GsPSGt7od8nB/uVQoW9Ste9QKAAAABAAL4AzokCI8/h6hiAAAAAElFTkSuQmCC) no-repeat center;
+    
+    behavior: url(backgroundsize.min.htc);
+
+}
+
+
+
+/*边栏部分*/
+
+#side {
+    position: absolute;
+    font: 13px arial;
+    width: 80px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+#side .more2 {
+    color: #333;
+    font-weight: bold;
+    margin-top: 22.5px;
+}
+
+#side img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border:1px solid #F5F5F5;
+}
+
+#side p {
+    margin-bottom: 10px;
+}
+
+#side a {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#side a:hover {
+    text-decoration: underline;
+}
+
+#side .divider {
+    width: 80%;
+    margin-left: 8px;
+    border-top: 1px solid #d1d1d1;
+}
+
+
+/*底部部分*/
+
+footer {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -318px;
+    font-size: 12px;
+}
+
+footer div {
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+/*底部左侧*/
+footer .rcode1 {
+    position: relative;
+    top: 6px;
+    width: 122px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_x2_bb1cd2e7.png) no-repeat;
+    background-size: 60px 60px;
+    -ms-background-size: 60px 60px;
+    -ms-behavior: url(backgroundsize.min.htc);
+    margin-left: 0;
+}
+
+footer .rcode_text {
+    float: right;
+    margin: 10px 0;
+}
+
+footer .rcode2 {
+    position: relative;
+    top: 6px;
+    width: 122px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/nuomi_x2_de75d5db.png) no-repeat;
+    background-size: 60px 60px;
+}
+/*底部右侧*/
+footer .remark {
+    width: 325px;
+}
+
+footer .remark p:first-child a {
+    margin-left: 21px;
+}
+
+footer .remark p:last-child a {
+    margin: 0 2px;
+}
+
+footer #setMain {
+    margin-left: 0;
+}
+
+footer p {
+    line-height: 22px;
+    color: #999;
+}
+
+footer p b {
+    color: #666;
+    font-weight: bold;
+}
+
+footer a {
+    color: #999;
+}
+
+footer a:hover {
+    color: #00c;
+}
+/*底部雪碧图*/
+footer .police1 {
+    position: relative;
+    width: 14px;
+    height: 17px;
+    overflow: hidden;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_0e814c16.png) no-repeat;
+    background-position: -600px -96px;
+    top: 3px;
+    display: inline-block;
+}
+
+footer .police2 {
+    position: relative;
+    width: 14px;
+    height: 17px;
+    overflow: hidden;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_0e814c16.png) no-repeat;
+    background-position: -623px -96px;
+    top: 3px;
+    display: inline-block;
+}

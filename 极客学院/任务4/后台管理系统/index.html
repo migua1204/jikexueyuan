@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统－主页</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <!-- 头部导航栏 -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Logo</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="container-fluid">
+            <!-- 左侧导航栏 -->
+            <div class="left">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation" class="active"><a href="#menu1" role="tab" data-toggle="tab">目录1</a></li>
+                    <li role="presentation"><a href="#menu2" role="tab" data-toggle="tab">目录2</a></li>
+                    <li role="presentation"><a href="#menu3" role="tab" data-toggle="tab">目录3</a></li>
+                </ul>
+            </div>
+            <!-- 右侧内容 -->
+            <div class="right">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="menu1">目录1的内容</div>
+                    <div role="tabpanel" class="tab-pane" id="menu2">目录2的内容</div>
+                    <div role="tabpanel" class="tab-pane" id="menu3">目录3的内容</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <!-- 底部信息 -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Copyright © MyWebsite. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

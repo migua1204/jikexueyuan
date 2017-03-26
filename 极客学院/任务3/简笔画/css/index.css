@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*边框*/
+
+.container {
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 100px;
+}
+
+
+/*左耳*/
+
+.left-ears {
+    width: 42px;
+    height: 20px;
+    border-radius: 21px /12px;
+    background: white;
+    border: 2px solid;
+    position: absolute;
+    display: inline-block;
+    left: 63px;
+    top: 33px;
+    transform: rotate(90deg);
+    animation: leftears 2s linear infinite alternate;
+    -webkit-animation: leftears 2s linear infinite alternate;
+    -moz-animation: leftears 2s linear infinite alternate;
+}
+
+@keyframes leftears {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(100deg);
+    }
+    75% {
+        transform: rotate(110deg);
+    }
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+@-webkit-keyframes leftears {
+    0% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(100deg);
+    }
+    75% {
+        -webkit-transform: rotate(110deg);
+    }
+    100% {
+        -webkit-transform: rotate(120deg);
+    }
+}
+
+@-moz-keyframes leftears {
+    0% {
+        -moz-transform: rotate(90deg);
+    }
+    50% {
+        -moz-transform: rotate(100deg);
+    }
+    75% {
+        -moz-transform: rotate(110deg);
+    }
+    100% {
+        -moz-transform: rotate(120deg);
+    }
+}
+
+
+/*右耳*/
+
+.right-ears {
+    width: 42px;
+    height: 20px;
+    border-radius: 21px /12px;
+    background: white;
+    border: 2px solid;
+    position: absolute;
+    display: inline-block;
+    left: 105px;
+    top: 32px;
+    transform: rotate(90deg);
+    animation: rightears 2s linear infinite alternate;
+    -webkit-animation: rightears 2s linear infinite alternate;
+    -moz-animation: rightears 2s linear infinite alternate;
+}
+
+@keyframes rightears {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(100deg);
+    }
+    75% {
+        transform: rotate(110deg);
+    }
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+@-webkit-keyframes rightears {
+    0% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(100deg);
+    }
+    75% {
+        -webkit-transform: rotate(110deg);
+    }
+    100% {
+        -webkit-transform: rotate(120deg);
+    }
+}
+
+@-moz-keyframes rightears {
+    0% {
+        -moz-transform: rotate(90deg);
+    }
+    50% {
+        -moz-transform: rotate(100deg);
+    }
+    75% {
+        -moz-transform: rotate(110deg);
+    }
+    100% {
+        -moz-transform: rotate(120deg);
+    }
+}
+
+/*头部*/
+
+.head {
+    width: 100px;
+    height: 75px;
+    border: 2px solid;
+    border-radius: 50px 50px 20px 20px;
+    position: absolute;
+    display: inline-block;
+    left: 46px;
+    top: 38px;
+    z-index: 3;
+    background: white;
+    transform: rotate(2deg);
+}
+
+
+/*左眼*/
+
+.left-eye {
+    width: 15px;
+    height: 22px;
+    border-radius: 7px /11px;
+    background: black;
+    position: absolute;
+    display: inline-block;
+    left: 16px;
+    top: 29px;
+    transform: rotate(10deg);
+    z-index: 2;
+}
+
+
+/*右眼*/
+
+.right-eye {
+    width: 15px;
+    height: 22px;
+    border-radius: 7px /11px;
+    background: black;
+    position: absolute;
+    display: inline-block;
+    left: 70px;
+    top: 29px;
+    transform: rotate(-10deg);
+    z-index: 2;
+}
+
+
+/*左眼球*/
+
+.left-ball {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: white;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+}
+
+
+/*左眼球*/
+
+.right-ball {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: white;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+}
+
+
+/*左腮红*/
+
+.left-red {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #FF6666;
+    position: absolute;
+    left: 13px;
+    top: 41px;
+    z-index: 1;
+}
+
+
+/*右腮红*/
+
+.right-red {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #FF6666;
+    position: absolute;
+    left: 72px;
+    top: 41px;
+    z-index: 1;
+}
+
+
+/*发卡*/
+
+.hairpin .lh {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #66CCFF;
+    position: absolute;
+    border: 2px solid;
+    left: 10px;
+    top: 0px;
+    z-index: 1;
+}
+
+.hairpin .ch {
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    background: #66CCFF;
+    position: absolute;
+    border: 2px solid;
+    left: 20px;
+    top: 2px;
+    z-index: 4;
+}
+
+.hairpin .rh {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px 6px 6px 7px;
+    background: #66CCFF;
+    position: absolute;
+    border: 2px solid;
+    left: 28px;
+    top: -1px;
+    z-index: 5;
+}
+
+
+/*嘴*/
+
+.mouse .m1 {
+    width: 10px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    left: 41px;
+    top: 48px;
+    transform: rotate(45deg);
+}
+
+.mouse .m2 {
+    width: 10px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    left: 47px;
+    top: 48px;
+    transform: rotate(135deg);
+}
+
+.mouse .m3 {
+    width: 10px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    left: 44px;
+    top: 53px;
+    transform: rotate(-90deg);
+}
+
+
+/*身体*/
+
+.body {
+    width: 57px;
+    height: 38px;
+    border: 2px solid;
+    border-radius: 57px 57px 16px 16px;
+    position: absolute;
+    display: inline-block;
+    left: 70px;
+    top: 100px;
+    background: #FFCC00;
+    z-index: 2;
+}
+
+
+/*左手*/
+
+.right-hand {
+    width: 20px;
+    height: 10px;
+    border-radius: 12px /7px;
+    background: white;
+    border: 2px solid;
+    position: absolute;
+    display: inline-block;
+    left: 44px;
+    top: 11px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+
+/*右手*/
+
+.left-hand {
+    width: 20px;
+    height: 10px;
+    border-radius: 10px /7px;
+    background: white;
+    border: 2px solid;
+    position: absolute;
+    display: inline-block;
+    left: 61px;
+    top: 112px;
+    transform: rotate(-55deg);
+    z-index: 1;
+}
+
+
+/*右腿*/
+
+.right-lag {
+    width: 25px;
+    height: 10px;
+    border-radius: 15px;
+    background: white;
+    position: absolute;
+    left: 96px;
+    top: 135px;
+    border: 2px solid;
+    z-index: 1;
+}
+
+
+/*左腿*/
+
+.left-lag {
+    width: 18px;
+    height: 10px;
+    border-radius: 9px;
+    background: white;
+    position: absolute;
+    left: 76px;
+    top: 135px;
+    border: 2px solid;
+    z-index: 1;
+}
