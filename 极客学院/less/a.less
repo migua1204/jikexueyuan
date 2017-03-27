@@ -1,0 +1,16 @@
+@width:100px;
+@height:100px;
+@color:#c1c1c1;
+.color{
+	background-color:@color;
+}
+#d1{
+	width: @width;
+	height: @height;
+	&:extend(.color);
+}
+#d2{
+	width: @width;
+	height: @height;
+	.color;
+}

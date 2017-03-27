@@ -1,0 +1,686 @@
+/*整体布局  初始化调用cube-min.css*/
+html{
+    min-width: 1000px;
+    min-height: 800px;
+}
+body {
+    background: #f7f7f8;
+}
+
+body a {
+    color: #333;
+}
+
+body a:hover {
+    text-decoration: underline;
+    color: #F50;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 50px;
+}
+
+.search {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*搜索框 百度图片*/
+
+.search .baidu-icon {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    margin: 0 30px 0 -80px;
+    background: url(../img/icons2.png) -10px -212px no-repeat;
+}
+
+
+/*搜索框div*/
+
+.search .search-input {
+    width: 538px;
+    height: 44px;
+    border: 1px solid #666;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background: #fff;
+}
+
+
+/*搜索框*/
+
+.search .search-input input {
+    width: 448px;
+    height: 44px;
+    font: 16px arial;
+    border: 0;
+    outline: none;
+}
+
+.search .search-input span {
+    position: absolute;
+    left: 10px;
+    color: #999;
+    font: normal 12px/45px simsun;
+}
+
+.search .search-input i {
+    display: inline-block;
+    width: 9px;
+    height: 7px;
+    background: url(../img/icons2.png) no-repeat;
+    background-position: -52px -97px;
+}
+
+
+/*搜索按钮*/
+
+.search .search-btn {
+    width: 120px;
+    height: 44px;
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: top;
+}
+
+.search .search-btn input {
+    width: 120px;
+    height: 46px;
+    background: url(../img/icons2.png) -211px -180px no-repeat;
+    border: 0;
+}
+
+
+/*换肤按钮*/
+
+.skin {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.skin ul {
+    display: inline-block;
+}
+
+.skin ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.skin ul li button{
+    width: 20px;
+    height: 10px;
+    border: 0;
+    vertical-align: text-top;
+    position: relative;
+    top:2px;
+}
+.skin .red{
+    background: #FF0033;
+}
+.skin .blue{
+    background: #0099CC;
+;
+}.skin .yellow{
+    background: #FFCC33;
+}.skin .pink{
+    background: #FF99CC;
+}.skin .green{
+    background: #0aa770;
+}
+/*有肤色项*/
+.skin-item {
+    /*color: #0aa770!important;*/
+}
+/*中上部导航*/
+
+.h-nav {
+    width: 100%;
+    border-top: 2px solid #0aa770;
+    text-align: center;
+    background: #fff;
+}
+
+
+/*导航栏下的链接*/
+
+.h-nav a {
+    color: #333;
+    font-size: 16px;
+}
+
+.h-nav ul {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+
+/*第一行导航条*/
+
+.h-nav .nav1 {
+    font-size: 16px;
+    background: #fcfcfc;
+}
+
+.h-nav .nav1 a {
+    display: inline-block;
+    width: 99%;
+}
+
+.h-nav .nav1 li {
+    display: inline-block;
+    -webkit-flex: 1;
+}
+
+
+/*导航栏-首页*/
+
+.h-nav .nav1 li:first-child {
+    -webkit-flex: 0.65;
+    background: #0aa770;
+}
+/*nav1下的超链接*/
+.h-nav .nav1 li:first-child a {
+    color: #fff;
+}
+
+.h-nav .nav1 li:first-child a:hover {
+    color: #fff;
+}
+
+.h-nav .nav1 li span {
+    border-right: 1px solid #ededed;
+}
+
+.h-nav .nav1 li {
+    height: 38px;
+    line-height: 38px;
+}
+
+.h-nav .nav1 li a:hover {
+    color: #0aa770;
+}
+
+
+/*第二行导航*/
+
+.h-nav .nav2 {
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border-top: 1px solid #ededed!important;
+    border: 1px solid #0aa770;
+}
+
+.h-nav .nav2 li {
+    display: inline-block;
+    -webkit-flex: 1;
+}
+
+.h-nav .nav2 li a {
+    color: #333;
+    font-size: 14px;
+}
+
+.h-nav .nav2 li a:hover {
+    text-decoration: underline;
+    color: #F50;
+}
+
+
+/*导航栏-权威推荐*/
+
+.h-nav .nav2 li:first-child a {
+    background: #fcfcfc;
+    /*color: #0aa770;*/
+}
+
+.h-nav .nav2 li span {
+    border-right: 1px solid #ededed;
+    margin-left: 10px;
+}
+
+
+/*侧边栏*/
+
+.left {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left ul {
+    display: inline-block;
+}
+
+.left ul li {
+    display: inline-block;
+}
+
+.side {
+    position: relative;
+    width: 278px;
+    height: 164px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    border-bottom: 0;
+    margin-top: 10px;
+}
+
+.side ul {
+    margin: 10px 0 0 15px;
+}
+
+.side ul li {
+    margin: 0 40px 6px 20px;
+}
+
+.side ul li:nth-child(1) {
+    margin-right: 26px;
+}
+
+.side ul li:nth-child(2) {
+    margin-right: 0px;
+}
+
+
+/*中间的竖线*/
+
+.side ul li span {
+    padding: 0 5px;
+    color: #999;
+    position: relative;
+    top: -1px;
+}
+
+
+/*侧边栏的图标*/
+
+.side ul li i {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -22px;
+    margin-top: 2px;
+    background: url(../img/icons3.png) no-repeat;
+}
+
+
+/*左边栏雪碧图*/
+
+.side ul li:nth-child(1) i {
+    background-position: -20px -81px;
+}
+
+.side ul li:nth-child(2) i {
+    background-position: -19px -301px;
+}
+
+.side ul li:nth-child(3) i {
+    background-position: -20px -160px;
+}
+
+.side ul li:nth-child(4) i {
+    background-position: -20px -381px;
+}
+
+.side ul li:nth-child(5) i {
+    background-position: -20px -100px;
+}
+
+.side ul li:nth-child(6) i {
+    background-position: -20px -261px;
+}
+
+.side ul li:nth-child(7) i {
+    background-position: -20px -21px;
+}
+
+.side ul li:nth-child(8) i {
+    background-position: -20px -121px;
+}
+
+.side ul li:nth-child(9) i {
+    background-position: -20px -281px;
+}
+
+.side ul li:nth-child(10) i {
+    background-position: -20px -362px;
+}
+
+
+/*左侧第二栏*/
+
+.side2 {
+    width: 278px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #cecece;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 0;
+}
+
+.side2 ul {
+    margin-left: 8px;
+}
+
+.side2 ul li {
+    width: 35px;
+    overflow: hidden;
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: left;
+    color: #666;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+
+/*左侧的图标*/
+
+.side2 i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons3.png) no-repeat;
+}
+
+
+/*第二栏第一个图标*/
+
+.side2 .side2-icon1 {
+    position: relative;
+    left: 14px;
+    top: -1px;
+    background-position: -20px -221px;
+}
+
+
+/*第二栏三角*/
+
+.side2 .side2-icon2 {
+    width: 9px;
+    height: 7px;
+    position: relative;
+    top: -7px;
+    background: url(../img/icons2.png) no-repeat;
+    background-position: -52px -97px;
+}
+
+
+/*侧边第三栏*/
+
+.side3 {
+    width: 278px;
+    height: 34px;
+    background: #f7f7f7;
+    border: 1px solid #cecece;
+    border-top: 0;
+}
+
+
+/*列表*/
+
+.side3 ul {
+    text-align: center;
+    line-height: 34px;
+}
+
+.side3 ul li {
+    width: 51px;
+}
+
+.side3 a {
+    color: #616161;
+}
+
+.side3 ul li:first-child {
+    border-top: 1px solid #0aa770;
+}
+
+.side3 ul li a:hover {
+    color: #0aa770;
+    text-decoration: none;
+}
+
+
+/*侧边第四栏*/
+
+.side4 {
+    width: 278px;
+    margin-top: 100px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #cecece;
+    padding-top: 10px;
+}
+
+.side4 ul li {
+    display: list-item;
+    list-style-type: square;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+
+/*右边栏*/
+
+.right {
+    display: inline-block;
+    border: 1px solid;
+    width: 884px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-color: #0aa770;
+    background: #fcfcfc;
+}
+
+
+/*右边第一栏*/
+
+.r1 {
+    width: 100%;
+    margin: 0 15px;
+    border-bottom-color: #f1f1f1;
+}
+
+.r1 ul li {
+    display: inline-block;
+    width: 130px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-right: 4px;
+    padding-left: 9px;
+}
+
+.r1 ul li i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    background: url(../img/icons.png) no-repeat;
+    margin-right: 3px;
+}
+
+
+/*右边第一栏的雪碧图*/
+
+.r1 li:nth-child(1) i {
+    background-position: 2px -198px;
+}
+
+.r1 li:nth-child(2) i {
+    background-position: 2px -278px;
+}
+
+.r1 li:nth-child(3) i {
+    background-position: 2px -318px;
+}
+
+.r1 li:nth-child(4) i {
+    background-position: 2px -38px;
+}
+
+.r1 li:nth-child(5) i {
+    background-position: 2px -157px;
+}
+
+.r1 li:nth-child(6) i {
+    background-position: 2px -398px;
+}
+
+.r1 li:nth-child(7) i {
+    background-position: 2px -478px;
+}
+
+.r1 li:nth-child(8) i {
+    background-position: 2px -238px;
+}
+
+.r1 li:nth-child(9) i {
+    background-position: 2px -358px;
+}
+
+.r1 li:nth-child(10) i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+     left: 2px;
+    margin-right: 6px;
+    background: url(../img/game.png) round;
+}
+
+.r1 li:nth-child(11) i {
+    background-position: 2px 2px;
+}
+
+.r1 li:nth-child(12) i {
+    background-position: 2px -639px;
+}
+
+.r1 li:nth-child(13) i {
+     display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+     left: 2px;
+    margin-right: 6px;
+    background: url(../img/jd.png) round;
+}
+
+.r1 li:nth-child(14) i {
+     display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    left: 2px;
+    margin-right: 6px;
+    background: url(../img/sn.png) round;
+}
+
+.r1 li:nth-child(15) i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+     left: 2px;
+    margin-right: 6px;
+    background: url(../img/jt.png) round;
+}
+
+.r1 li:nth-child(16) i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+     left: 2px;
+    margin-right: 6px;
+    background: url(../img/gm.png) round;
+}
+
+.r1 li:nth-child(17) i {
+    background-position: 2px -518px;
+}
+
+.r1 li:nth-child(18) i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+     left: 2px;
+    margin-right: 6px;
+    background: url(../img/jhs.png) round;
+}
+
+
+/*右边第二栏*/
+
+.r2 {
+    width: 100%;
+    margin: 10px 25px;
+}
+
+.r2 ul li {
+    display: inline-block;
+    width: 143px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*右边第三栏*/
+
+.r3 {
+    width: 886px;
+    background: #f7f7f8;
+    text-align: center;
+    border-left: 1px solid #f7f7f8;
+    border-right: : 1px solid #f7f7f8;
+    border-top: 1px solid #0aa770;
+    border-bottom: 1px solid #0aa770;
+    margin-left: -1px;
+}
+
+.r3 ul li {
+    display: inline-block;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 20px;
+}
+
+.r3 ul li a {
+    color: #3b5998;
+}
+
+.r4 ul {
+    width: 862px;
+}
+
+.r4 ul li {
+    text-align: center;
+    display: inline-block;
+    width: 92px;
+    margin: 5px 0;
+}
+
+.r4 ul li:last-child a {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
